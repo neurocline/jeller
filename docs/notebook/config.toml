@@ -1,0 +1,5 @@
+baseURL = "http://nabu-codex/"
+languageCode = "en-us"
+title = "Jeller Notebook"
+theme = "brian-temple"
+relativeURLs = true

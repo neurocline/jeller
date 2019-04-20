@@ -1,0 +1,15 @@
+// Markdown grammar
+// - Currently just CommonMark, but will be extended to cover all reasonable
+//   Markdown variants
+
+start : document
+
+// A Markdown document can start with zero or more blank lines and
+// end with zero or more blank lines. Obviously, a non-trivial
+// Markdown document will contain at least one block.
+
+document : blankline* block* blankline*
+
+blankline : WS* NL
+WS : ' ' | \t
+NL :  \n | \r\n | \r
